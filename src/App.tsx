@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import {NewComponent} from './NewComponent';
+import {NewTableComponent} from './NewTableComponent';
 
 function App() {
     const [topCars] = useState(
@@ -14,8 +15,10 @@ function App() {
     return (
         <div>
                 <NewComponent topCars={topCars}/>
+                <NewTableComponent/>
         </div>
     );
 }
+
 
 export default App;
