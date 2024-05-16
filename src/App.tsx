@@ -13,7 +13,7 @@ function App() {
     )
     return (
         <div>
-                <NewComponent/>
+                <NewComponent topCars={topCars}/>
         </div>
     );
 }
