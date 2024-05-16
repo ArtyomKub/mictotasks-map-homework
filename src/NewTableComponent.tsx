@@ -1,6 +1,7 @@
 import React from 'react';
 import {EliteCarsType} from './NewComponent';
 import {TopCarsType} from './NewComponent';
+import './NewTableCommponent.css';
 
 
 export const NewTableComponent = (props: EliteCarsType) => {
@@ -17,7 +18,7 @@ export const NewTableComponent = (props: EliteCarsType) => {
                     return (
                         <tbody key={index}>
                         <tr>
-                            <td>{index+1}</td>
+                            <td>{index + 1}</td>
                             <td>{object.manufacturer}</td>
                             <td>{object.model}</td>
                         </tr>
