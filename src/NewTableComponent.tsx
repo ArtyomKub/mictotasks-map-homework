@@ -4,23 +4,29 @@ import {TopCarsType} from './NewComponent';
 
 
 export const NewTableComponent = (props: EliteCarsType) => {
-    return (
-        <table>
-            <tr>
-                <th>MANUFACTURER</th>
-                <th>MODEL</th>
-            </tr>
-            {props.topCars.map((object: TopCarsType, index) => {
-                return (
-                    <div>
+        return (
+            <table>
+                <thead>
+                <tr>
+                    <th>POSITION</th>
+                    <th>MANUFACTURER</th>
+                    <th>MODEL</th>
+                </tr>
+                </thead>
+                {props.topCars.map((object: TopCarsType, index) => {
+                    return (
+                        <tbody key={index}>
                         <tr>
+                            <td>{index+1}</td>
                             <td>{object.manufacturer}</td>
                             <td>{object.model}</td>
                         </tr>
-                    </div>
-                )
-            })}
-        </table>
-    );
-};
+                        </tbody>
+                    )
+                })}
+            </table>
+        )
+            ;
+    }
+;
 
