@@ -14,8 +14,8 @@ function App() {
     )
     return (
         <div>
-                <NewComponent topCars={topCars}/>
-                <NewTableComponent/>
+            <NewComponent topCars={topCars}/>
+            <NewTableComponent topCars={topCars}/>
         </div>
     );
 }
